@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Data Pejabat Desa</title>
+    <!-- Tambahkan link CSS Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="mt-5 text-center">Input Data Pejabat Desa</h2>
+      <form action="proses.php" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="nama">Nama:</label>
+          <input type="text" class="form-control" id="nama" name="nama" placeholder="Maukkan Nama Anda" required />
+        </div>
+
+        <div class="form-group">
+          <label for="jabatan">Jabatan:</label>
+          <input type="text" class="form-control" id="jabatan" name="jabatan" placeholder="Masukkan Jabatan Anda" required />
+        </div>
+
+        <div class="form-group">
+          <label for="alamat">Alamat:</label>
+          <textarea class="form-control" id="alamat" name="alamat" placeholder="Maukkan Jabatan Anda" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="gambar">Gambar:</label>
+          <input type="file" class="form-control-file" id="gambar" name="gambar" accept="image/*" required />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Simpan</button>
+      </form>
+    </div>
+
+    <!-- Tambahkan script Bootstrap dan jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+D6OcQC6P1M5F5FfGn5E+5S2FfGgTX2F5U6p5j4y5q5Pj5Ffh" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0v8FqFjcJ6pajs/rfdfs3SO+kWlM5r5pbcabF8fpiC5iU5z6j3" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0v8FqFjcJ6pajs/rfdfs3SO+kWlM5r5pbcabF8fpiC5iU5z6j3" crossorigin="anonymous"></script>
+  </body>
+</html>

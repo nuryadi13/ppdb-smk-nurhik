@@ -1,0 +1,58 @@
+/* Mengatur lebar dan tinggi gambar dalam carousel */
+
+/* Aturan CSS untuk layar desktop (lebar lebih dari 768px) */
+@media (min-width: 769px) {
+  /* Tambahkan aturan CSS untuk desktop di sini */
+  .carousel-inner img {
+    width: 93%; /* Mengisi lebar carousel */
+    height: 400px; /* Menyesuaikan tinggi sesuai aspek asli */
+  }
+  .element {
+    padding-left: 90px;
+    padding-right: 0px;
+  }
+
+  .backgroudgunung {
+    background-image: url("img/batugunung.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .card {
+    padding: 10px;
+  }
+  .jarak-card {
+    margin: 50px;
+  }
+}
+/* Aturan CSS untuk layar tablet (lebar antara 481px dan 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  /* Tambahkan aturan CSS untuk tablet di sini */
+}
+
+/* Aturan CSS untuk layar mobile (lebar kurang dari atau sama dengan 480px) */
+@media (max-width: 480px) {
+  .center-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ini untuk membuat card berada di tengah halaman vertikal */
+  }
+  /* Tambahkan aturan CSS untuk mobile di sini */
+  .backgroudgunung {
+    background-image: url("img/batugunung.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .carousel-inner img {
+    width: 83%; /* Mengisi lebar carousel */
+    padding-top: 20px;
+    height: 100px; /* Menyesuaikan tinggi sesuai aspek asli */
+  }
+  .element {
+    padding-left: 50px;
+    padding-right: 0px;
+  }
+  .jarak-card {
+    margin-left: 40px;
+  }
+}
